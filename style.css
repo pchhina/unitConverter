@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+.dark-active {
+  margin: auto;
+
+  width: 550px;
+
+
+  background: #1F2937;
+  text-align: center;
+  color: #fff;
+  
+  border: 1px solid #fff;
+  font-family: 'Inter';
+
+}
+
+.main {
+  background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+
+  border: 1px solid;
+
+}
+
+.main h2 {
+  margin-top: 50px;
+  font-style: normal;
+}
+
+.main h1 {
+  margin-top: 25px;
+  font-size: 5em;
+  height: 100px;
+}
+
+form {
+  margin-bottom: 25px;
+}
+
+.results-volume,
+.results-length {
+  margin-bottom: 30px;
+}
+
+.results-length {
+  margin-top: 30px;
+}
+
+.results p {
+  margin-top: 5px;
+  color: #ECF0F1;
+}
+

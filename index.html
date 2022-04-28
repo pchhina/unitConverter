@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Unit Converter</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="dark-active">
+			<div class="main">
+				<h2>Metric/Imperial Unit Conversion</h2>
+				<h1 id="input">20</h1>
+				<form id="form-input">
+					<input placeholder="Enter a number" id="input-number" pattern="[0-9]+">
+				</form>
+			</div>
+			<div class="results">
+				<div class="results-length"> 
+					<h3>Length (meter/feet)</h3>
+					<p id="length"> -- length conversion -- </p>
+				</div>
+				<div class="results-volume">
+					<h3>Volume (Litres/Gallons)</h3>
+					<p id="volume"> -- volume conversion -- </p>
+				</div>
+				<div class="results-mass" >
+					<h3>Mass (Kilograms/Pounds)</h3>
+					<p id="mass"> -- mass conversion -- </p>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
