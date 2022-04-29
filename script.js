@@ -1,19 +1,22 @@
+// html nodes
 let inputEl = document.getElementById("input")
+let formEl = document.getElementById('form-input');
 
 let lengthEl = document.getElementById('length');
 let volumeEl = document.getElementById('volume');
 let massEl = document.getElementById('mass');
 
-let formEl = document.getElementById('form-input');
 
-
-
+// Number -> String
+// produces the appropriate string for each unit conversion from given number
 const convert = (input) => {
   
+	// constants
   const FEET_PER_METER = 3.28084;
   const GALLON_PER_LITRE = 0.264172;
   const POUNDS_PER_KG = 2.20462;
 
+	// conversions
   let feet = input * FEET_PER_METER;
   let meter = input / FEET_PER_METER;
 
@@ -23,8 +26,7 @@ const convert = (input) => {
   let pounds = input * POUNDS_PER_KG;
   let kg = input / POUNDS_PER_KG;
 
-  // convert to strings with fixed precision
-
+  // convert results to strings with fixed precision
   feet = feet.toFixed(3);
   meter = meter.toFixed(3);
   gallon = gallon.toFixed(3);
@@ -45,9 +47,13 @@ const convert = (input) => {
   massEl.textContent = massMsg;
 }
 
+
+// Form's event listener on input event
 formEl.addEventListener('input', event => {
   event.preventDefault();
   inputEl.textContent = event.target.value;
+
+	// convert input to number and process
   let input = Number(inputEl.textContent);
 	if (Number.isNaN(input)) {
 		badInputMessage();
@@ -56,6 +62,8 @@ formEl.addEventListener('input', event => {
 	}
 })
 
+
+// Message if the input cannot be converted to a number
 const badInputMessage = () => {
 	let msg = 'Please enter a valid number'
 	massEl.textContent = msg;
