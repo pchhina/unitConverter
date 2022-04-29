@@ -2,29 +2,21 @@
 
 .dark-active {
   margin: auto;
-
   width: 550px;
-
-
   background: #1F2937;
   text-align: center;
   color: #fff;
-  
   border: 1px solid #fff;
   font-family: 'Inter';
-
 }
 
 .main {
-  background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
-
+  background: linear-gradient(250deg, #585DFE 0%, #FB3796 100%);
   border: 1px solid;
-
 }
 
 .main h2 {
   margin-top: 50px;
-  font-style: normal;
 }
 
 .main h1 {
@@ -37,13 +29,23 @@ form {
   margin-bottom: 25px;
 }
 
+form input {
+	height: 25px;
+	font-size: 1.2em;
+}
+
 .results-volume,
+.results-length,
+.results-mass {
+  margin-top: 30px;
+}
+
 .results-length {
   margin-bottom: 30px;
 }
 
-.results-length {
-  margin-top: 30px;
+.results h3 {
+	margin-bottom: 5px;
 }
 
 .results p {
